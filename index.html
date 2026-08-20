@@ -1523,6 +1523,23 @@
         });
 
     </script>
+<script type="module">
+  import { createClient } from 'https://esm.sh/@sanity/client'
 
+  const client = createClient({
+    projectId: 'g0e25x1s',
+    dataset: 'production',
+    useCdn: true,
+    apiVersion: '2024-01-01',
+  })
+
+  // دالة تجربة جلب البيانات من Sanity
+  async function fetchPosts() {
+    const posts = await client.fetch(`*[_type == "post"]`)
+    console.log("بيانات Sanity:", posts)
+  }
+
+  fetchPosts()
+</script>
 </body>
 </html>
