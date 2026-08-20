@@ -11,6 +11,7 @@ collections:
     folder: "_news"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+
     fields:
       - { label: "عنوان المنشور", name: "title", widget: "string" }
       - { label: "تاريخ النشر", name: "date", widget: "datetime" }
