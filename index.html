@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth select-none">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مكتب الأستاذ / يوسف عادل أبوزيد - المحامى | البيان للمحاماة والاستشارات القانونية</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts: Amiri & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0a0f1d',
+                            800: '#111827',
+                            700: '#1a2332',
+                            600: '#242f42',
+                        },
+                        gold: {
+                            400: '#f3e5ab',
+                            500: '#d4af37',
+                            600: '#aa820a',
+                            700: '#866504'
+                        }
+                    },
+                    fontFamily: {
+                        amiri: ['Amiri', 'serif'],
+                        tajawal: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        input,
+        textarea,
+        select {
+            -webkit-user-select: text !important;
+            -moz-user-select: text !important;
+            -ms-user-select: text !important;
+            user-select: text !important;
+        }
+
+        img {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            pointer-events: none;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0a0f1d;
+            color: #f1f5f9;
+        }
+
+        h1,
+        h2,
+        h3,
+        .font-serif-custom {
+            font-family: 'Amiri', serif;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fff2a3 0%, #d4af37 50%, #aa820a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-glow {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+        }
+
+        .gold-border-glow:hover {
+            border-color: rgba(212, 175, 55, 0.7);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+        }
+
+        .glass-nav {
+            background: rgba(10, 15, 29, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .scales-bg-overlay {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 85vw;
+            max-width: 900px;
+            height: 85vh;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.04;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="%23d4af37"><path d="M384 32H256c-17.7 0-32 14.3-32 32s14.3 32 32 32h32v241.6c-29.8 8.6-58 22.8-82.5 42.4H112c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2-16-16v-32c0-8.8-7.2-16-16-16H434.5c-24.5-19.6-52.7-33.8-82.5-42.4V96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32zM128 224c-35.3 0-64 28.7-64 64s28.7 64 64 64 64-28.7 64-64-28.7-64-64-64zm384 0c-35.3 0-64 28.7-64 64s28.7 64 64 64 64-28.7 64-64-28.7-64-64-64z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        /* الشعار */
+        .lawyer-slogan {
+            position: relative;
+            display: inline-block;
+            font-family: 'Amiri', serif;
+            letter-spacing: 1px;
+        }
+
+        .lawyer-slogan::before,
+        .lawyer-slogan::after {
+            content: "";
+            display: inline-block;
+            width: 35px;
+            height: 1px;
+            background: linear-gradient(to left, transparent, #d4af37);
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+
+        .lawyer-slogan::after {
+            background: linear-gradient(to right, transparent, #d4af37);
+        }
+    </style>
+</head>
+
+<body class="bg-navy-900 text-slate-200 antialiased selection:bg-gold-500 selection:text-navy-900 relative">
+
+    <div class="scales-bg-overlay"></div>
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+            <a href="#" class="flex items-center gap-3 group">
+
+                <div class="w-12 h-12 rounded-full border-2 border-gold-500/60 bg-navy-700 flex items-center justify-center text-gold-500 shadow-md group-hover:border-gold-500 transition-colors">
+                    <i class="fa-solid fa-scale-balanced text-xl"></i>
+                </div>
+
+                <div>
+                    <span class="block text-xl font-bold font-serif-custom text-white tracking-wide group-hover:text-gold-400 transition-colors">
+                        مكتب الأستاذ / يوسف عادل أبوزيد - المحامى
+                    </span>
+
+                    <!-- تم استبدال الاسم المكرر -->
+                    <span class="block text-xs text-gold-500 tracking-wider">
+                        البيان للمحاماة والاستشارات القانونية
+                    </span>
+                </div>
+
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="text-slate-300 hover:text-gold-400 transition-colors">عن البيان</a>
+                <a href="#services" class="text-slate-300 hover:text-gold-400 transition-colors">مجالات الاختصاص</a>
+                <a href="#gallery" class="text-slate-300 hover:text-gold-400 transition-colors">معرض الصور</a>
+                <a href="#consultation" class="text-slate-300 hover:text-gold-400 transition-colors">طلب استشارة</a>
+                <a href="#contact" class="text-slate-300 hover:text-gold-400 transition-colors">التواصل والمقر</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center gap-4">
+
+                <a href="tel:01221220331"
+                    class="text-xs lg:text-sm font-semibold text-slate-300 hover:text-gold-400 flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-gold-500"></i>
+                    <span>01221220331</span>
+                </a>
+
+                <a href="#consultation"
+                    class="bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-navy-900 font-bold px-5 py-2.5 rounded-lg text-sm transition-all shadow-lg hover:shadow-gold-500/20">
+                    حجز استشارة
+                </a>
+
+            </div>
+
+            <button id="menu-btn"
+                class="md:hidden text-slate-300 hover:text-gold-500 focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-navy-800 border-b border-gold-500/20 px-4 pt-4 pb-6 space-y-3">
+
+            <a href="#about" class="block text-slate-300 hover:text-gold-400 py-2">عن البيان</a>
+            <a href="#services" class="block text-slate-300 hover:text-gold-400 py-2">مجالات الاختصاص</a>
+            <a href="#gallery" class="block text-slate-300 hover:text-gold-400 py-2">معرض الصور</a>
+            <a href="#consultation" class="block text-slate-300 hover:text-gold-400 py-2">طلب استشارة</a>
+            <a href="#contact" class="block text-slate-300 hover:text-gold-400 py-2">التواصل والمقر</a>
+
+            <div class="pt-4 border-t border-slate-700/60 flex flex-col gap-3">
+
+                <a href="https://wa.me/201221220331"
+                    target="_blank"
+                    class="w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded-lg flex items-center justify-center gap-2">
+
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+
+                    <span>استشارة فورية عبر واتساب</span>
+
+                </a>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-28 pb-20 flex items-center justify-center overflow-hidden z-10">
+
+        <div class="absolute inset-0 z-0">
+
+            <img src="1.jpg"
+                alt="خلفية"
+                class="w-full h-full object-cover object-center opacity-20">
+
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/90 to-navy-900/60"></div>
+
+        </div>
+
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-8">
+
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gold-500/10 border-2 border-gold-500/40 text-gold-400 text-4xl mb-6 shadow-2xl backdrop-blur-sm animate-pulse">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-sm font-medium mb-6">
+
+                <i class="fa-solid fa-award"></i>
+
+                <span>
+                    البيان للمحاماة والاستشارات القانونية
+                </span>
+
+            </div>
+
+
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+
+                مكتب الأستاذ / يوسف عادل أبوزيد - المحامى
+
+                <br>
+
+                <span class="gold-gradient-text">
+                    دفاع محكم واستشارات ترسي الحقوق
+                </span>
+
+            </h1>
+
+
+            <!-- الشعار الجديد -->
+            <div class="lawyer-slogan text-gold-400 text-xl md:text-2xl font-bold mb-6">
+                المحاماة كما ينبغي أن تكون
+            </div>
+
+
+            <!-- العبارة الجديدة -->
+            <div class="inline-flex items-center justify-center gap-3 px-5 py-2.5 rounded-full border border-gold-500/30 bg-gold-500/5 text-gold-300 text-sm md:text-base font-medium mb-8 shadow-lg">
+
+                <i class="fa-solid fa-star text-gold-500"></i>
+
+                <span>
+                    مكتب البيان — خطة واضحة .. وفريق عمل متميز
+                </span>
+
+                <i class="fa-solid fa-star text-gold-500"></i>
+
+            </div>
+
+
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-slate-300 mb-10 leading-relaxed font-light">
+
+                الأستاذ /
+                <strong>يوسف عادل أبوزيد - المحامى</strong>
+
+                (محام بالاستئناف العالي ومجلس الدولة) — خبرة قانونية متكاملة
+                لمباشرة الدعاوى المدنية، الإدارية، والأحوال الشخصية
+                وتأسيس الشركات بنزاهة واحترافية.
+
+            </p>
+
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+
+                <a href="#consultation"
+                    class="w-full sm:w-auto bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-navy-900 font-bold px-8 py-4 rounded-xl shadow-xl shadow-gold-500/10 hover:shadow-gold-500/25 transition-all text-center flex items-center justify-center gap-3">
+
+                    <i class="fa-solid fa-calendar-check text-lg"></i>
+
+                    <span>
+                        طلب استشارة قانونية
+                    </span>
+
+                </a>
+
+
+                <a href="https://wa.me/201221220331?text=السلام%20عليكم،%20أود%20الاستفسار%20عن%20استشارة%20قانونية%20من%20مكتب%20البيان"
+                    target="_blank"
+                    class="w-full sm:w-auto bg-navy-700/80 hover:bg-navy-700 text-white font-medium px-8 py-4 rounded-xl border border-slate-600 hover:border-gold-500/50 transition-all text-center flex items-center justify-center gap-3">
+
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+
+                    <span>
+                        تواصل واتساب مباشر
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mt-16 pt-10 border-t border-slate-800">
+
+                <div class="p-4 rounded-xl bg-navy-800/50 border border-slate-800">
+
+                    <div class="text-3xl font-bold font-serif-custom text-gold-400 mb-1">
+                        +15
+                    </div>
+
+                    <div class="text-xs text-slate-400">
+                        عاماً من الخبرة القضائية
+                    </div>
+
+                </div>
+
+
+                <div class="p-4 rounded-xl bg-navy-800/50 border border-slate-800">
+
+                    <div class="text-3xl font-bold font-serif-custom text-gold-400 mb-1">
+                        مجلس الدولة
+                    </div>
+
+                    <div class="text-xs text-slate-400">
+                        مباشرة المحاكم الإدارية العليا
+                    </div>
+
+                </div>
+
+
+                <div class="p-4 rounded-xl bg-navy-800/50 border border-slate-800">
+
+                    <div class="text-3xl font-bold font-serif-custom text-gold-400 mb-1">
+                        الاستئناف
+                    </div>
+
+                    <div class="text-xs text-slate-400">
+                        التمثيل أمام محاكم الاستئناف
+                    </div>
+
+                </div>
+
+
+                <div class="p-4 rounded-xl bg-navy-800/50 border border-slate-800">
+
+                    <div class="text-3xl font-bold font-serif-custom text-gold-400 mb-1">
+                        اتحاد المحامين
+                    </div>
+
+                    <div class="text-xs text-slate-400">
+                        عضوية الاتحاد العربي
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Bio / About Section -->
+    <section id="about"
+        class="py-24 bg-navy-800/50 relative border-t border-b border-slate-800 z-10">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-5 relative">
+
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-2 border-gold-500/30">
+
+                        <img src="1.jpg"
+                            alt="مكتب البيان"
+                            class="w-full h-[450px] object-cover">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent opacity-80"></div>
+
+                        <div class="absolute bottom-6 right-6 left-6 p-4 rounded-xl bg-navy-900/90 backdrop-blur-sm border border-gold-500/30">
+
+                            <h3 class="text-xl font-bold text-white">
+                                مكتب الأستاذ / يوسف عادل أبوزيد - المحامى
+                            </h3>
+
+                            <p class="text-sm text-gold-400">
+                                البيان للمحاماة والاستشارات القانونية
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="lg:col-span-7 space-y-6">
+
+                    <div class="inline-flex items-center gap-2 text-gold-500 font-semibold text-sm">
+
+                        <i class="fa-solid fa-gavel"></i>
+
+                        <span>
+                            عن مكتب البيان
+                        </span>
+
+                    </div>
+
+
+                    <h2 class="text-3xl md:text-5xl font-bold text-white leading-snug">
+
+                        رؤية قانونية دقيقة وركيزة حماية متكاملة لمختلف القضايا
+
+                    </h2>
+
+
+                    <p class="text-slate-300 leading-relaxed text-base md:text-lg">
+
+                        تأسس
+                        <strong>
+                            (البيان للمحاماة والاستشارات القانونية)
+                        </strong>
+
+                        ليكون صرحاً يُقدم
+                        الخدمات والدفاع القضائي وفق أعلى المستويات القانونية. يرتكز عمل المكتب
+                        تحت قيادة الأستاذ
+                        <strong>
+                            يوسف عادل أبوزيد
+                        </strong>
+
+                        على التحليل المستفيض
+                        لكافة أوراق القضية وتطبيق أحدث أحكام محكمة النقض والإدارية العليا.
+
+                    </p>
+
+
+                    <div class="space-y-4 pt-2">
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-navy-700/40 border border-slate-700/60">
+
+                            <div class="p-3 rounded-lg bg-gold-500/10 text-gold-400 text-xl">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+
+                            <div>
+
+                                <h4 class="text-lg font-bold text-white mb-1">
+                                    التمثيل القضائي الإداري والمدني
+                                </h4>
+
+                                <p class="text-sm text-slate-300">
+                                    مباشرة المنازعات أمام مجلس الدولة، الدعاوى المدنية،
+                                    ودعاوى الأحوال الشخصية وصياغة المذكرات القانونية.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-navy-700/40 border border-slate-700/60">
+
+                            <div class="p-3 rounded-lg bg-gold-500/10 text-gold-400 text-xl">
+                                <i class="fa-solid fa-file-contract"></i>
+                            </div>
+
+                            <div>
+
+                                <h4 class="text-lg font-bold text-white mb-1">
+                                    عقود الشركات والاستشارات التجارية
+                                </h4>
+
+                                <p class="text-sm text-slate-300">
+                                    تأسيس الشركات بجميع أنواعها وصياغة العقود التجارية لحماية المستثمرين ورجال الأعمال.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative z-10">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+
+                <span class="text-gold-500 font-semibold text-sm block mb-2">
+
+                    <i class="fa-solid fa-briefcase ml-2"></i>
+
+                    تخصصات مكتب البيان
+
+                </span>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+                    خدماتنا واختصاصاتنا القانونية
+                </h2>
+
+                <p class="text-slate-400">
+                    تغطية شاملة لكافة الفروع القانونية بدقة وسرية تامة
+                </p>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                <!-- القضاء الإداري -->
+                <div class="bg-navy-800 rounded-2xl p-8 gold-border-glow transition-all group hover:-translate-y-2">
+
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-900 transition-colors">
+
+                        <i class="fa-solid fa-scale-balanced"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-3">
+                        القضاء الإداري ومجلس الدولة
+                    </h3>
+
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        دعاوى إلغاء القرارات الإدارية، التسويات الوظيفية،
+                        والطعون أمام المحكمة الإدارية العليا.
+                    </p>
+
+                    <a href="#consultation"
+                        class="text-gold-400 hover:text-gold-300 text-sm font-semibold inline-flex items-center gap-2">
+
+                        <span>
+                            طلب استشارة إدارية
+                        </span>
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- الدعاوى المدنية -->
+                <div class="bg-navy-800 rounded-2xl p-8 gold-border-glow transition-all group hover:-translate-y-2">
+
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-900 transition-colors">
+
+                        <i class="fa-solid fa-scale-balanced"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-3">
+                        الدعاوى المدنية والأحوال الشخصية
+                    </h3>
+
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        مباشرة الدعاوى المدنية، التعويضات، العقارات والملكية،
+                        إلى جانب قضايا الأسرة والأحوال الشخصية والنفقات والمواريث.
+                    </p>
+
+                    <a href="#consultation"
+                        class="text-gold-400 hover:text-gold-300 text-sm font-semibold inline-flex items-center gap-2">
+
+                        <span>
+                            طلب استشارة قانونية
+                        </span>
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- تأسيس الشركات -->
+                <div class="bg-navy-800 rounded-2xl p-8 gold-border-glow transition-all group hover:-translate-y-2">
+
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-900 transition-colors">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-3">
+                        تأسيس الشركات والعقود
+                    </h3>
+
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        تأسيس مختلف أنواع الشركات، وصياغة العقود التجارية
+                        والامتياز لحماية استثماراتكم.
+                    </p>
+
+                    <a href="#consultation"
+                        class="text-gold-400 hover:text-gold-300 text-sm font-semibold inline-flex items-center gap-2">
+
+                        <span>
+                            طلب استشارة شركات
+                        </span>
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- المنازعات المدنية والتجارية -->
+                <div class="bg-navy-800 rounded-2xl p-8 gold-border-glow transition-all group hover:-translate-y-2">
+
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-900 transition-colors">
+
+                        <i class="fa-solid fa-handshake-angle"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-3">
+                        المنازعات المدنية والتجارية
+                    </h3>
+
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        دعاوى التعويضات، العقارات، الملكية،
+                        وتحصيل الديون المالية المستحقة.
+                    </p>
+
+                    <a href="#consultation"
+                        class="text-gold-400 hover:text-gold-300 text-sm font-semibold inline-flex items-center gap-2">
+
+                        <span>
+                            طلب استشارة مدنية
+                        </span>
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- الأحوال الشخصية -->
+                <div class="bg-navy-800 rounded-2xl p-8 gold-border-glow transition-all group hover:-translate-y-2">
+
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-900 transition-colors">
+
+                        <i class="fa-solid fa-people-roof"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-3">
+                        الأحوال الشخصية والأسرة
+                    </h3>
+
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        قضايا المواريث والتركات، النفقات،
+                        وتسوية كافة النزاعات العائلية برؤية إنسانية وقانونية.
+                    </p>
+
+                    <a href="#consultation"
+                        class="text-gold-400 hover:text-gold-300 text-sm font-semibold inline-flex items-center gap-2">
+
+                        <span>
+                            طلب استشارة أسرة
+                        </span>
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- التحكيم -->
+                <div class="bg-navy-800 rounded-2xl p-8 gold-border-glow transition-all group hover:-translate-y-2">
+
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-navy-900 transition-colors">
+
+                        <i class="fa-solid fa-scroll"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-3">
+                        التحكيم وصياغة المذكرات
+                    </h3>
+
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        إعداد صحف الدعاوى والطعون والاستئناف،
+                        والتمثيل في جلسات التحكيم.
+                    </p>
+
+                    <a href="#consultation"
+                        class="text-gold-400 hover:text-gold-300 text-sm font-semibold inline-flex items-center gap-2">
+
+                        <span>
+                            طلب صياغة مذكرة
+                        </span>
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Video Section -->
+    <section id="video-section"
+        class="py-16 bg-navy-900 border-t border-b border-slate-800 relative z-10">
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <div class="mb-8">
+
+                <span class="text-gold-500 font-semibold text-sm block mb-2">
+
+                    <i class="fa-solid fa-circle-play ml-2"></i>
+
+                    جولة مصورة
+
+                </span>
+
+                <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">
+                    شاهد الفيديو التعريفي لمكتب البيان
+                </h2>
+
+                <p class="text-slate-400 text-sm">
+                    تعرف على بيئة العمل ورؤيتنا القانونية عن قرب
+                </p>
+
+            </div>
+
+
+            <div class="relative rounded-2xl overflow-hidden border-2 border-gold-500/30 shadow-2xl bg-navy-800 max-w-4xl mx-auto">
+
+                <video controls poster="1.jpg"
+                    class="w-full h-auto max-h-[500px] object-cover rounded-2xl">
+
+                    <source src="1.mp4" type="video/mp4">
+
+                    متصفحك لا يدعم تشغيل الفيديو.
+
+                </video>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery"
+        class="py-24 bg-navy-800/40 relative border-t border-b border-slate-800 z-10">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+
+                <span class="text-gold-500 font-semibold text-sm block mb-2">
+
+                    <i class="fa-solid fa-images ml-2"></i>
+
+                    معرض الصور
+
+                </span>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+                    بيئة العمل ومقر مكتب البيان
+                </h2>
+
+                <p class="text-slate-400">
+                    لمحات مصورة من داخل المقر وقاعات الاستشارات ولقاءات الموكلين
+                </p>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+                <div class="group relative overflow-hidden rounded-2xl border border-gold-500/20 shadow-xl bg-navy-900">
+
+                    <img src="2.jpg"
+                        alt="صورة 1"
+                        class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+
+                        <span class="text-gold-400 text-xs font-semibold uppercase mb-1">
+                            الصورة رقم 1
+                        </span>
+
+                        <h4 class="text-white text-lg font-bold">
+                            مكتب البيان
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="group relative overflow-hidden rounded-2xl border border-gold-500/20 shadow-xl bg-navy-900">
+
+                    <img src="3.jpg"
+                        alt="صورة 2"
+                        class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+
+                        <span class="text-gold-400 text-xs font-semibold uppercase mb-1">
+                            الصورة رقم 2
+                        </span>
+
+                        <h4 class="text-white text-sm font-bold">
+                            تكريماً رسمياً تقديراً للجهود والمشاركات المتميزة.
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="group relative overflow-hidden rounded-2xl border border-gold-500/20 shadow-xl bg-navy-900">
+
+                    <img src="4.jpg"
+                        alt="صورة 3"
+                        class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+
+                        <span class="text-gold-400 text-xs font-semibold uppercase mb-1">
+                            الصورة رقم 3
+                        </span>
+
+                        <h4 class="text-white text-lg font-bold">
+                            جانب من اللقاءات المتميزة مع موكلينا الأعزاء في صالة الزوار بمقر مكتب البيان
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="group relative overflow-hidden rounded-2xl border border-gold-500/20 shadow-xl bg-navy-900">
+
+                    <img src="7.jpg"
+                        alt="صورة 4"
+                        class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+
+                        <span class="text-gold-400 text-xs font-semibold uppercase mb-1">
+                            الصورة رقم 4
+                        </span>
+
+                        <h4 class="text-white text-lg font-bold">
+                            جانب من اللقاءات المتميزة مع موكلينا الأعزاء في صالة الزوار بمقر مكتب البيان
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="group relative overflow-hidden rounded-2xl border border-gold-500/20 shadow-xl bg-navy-900 sm:col-span-2 lg:col-span-2">
+
+                    <img src="6.jpg"
+                        alt="صورة 5"
+                        class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+
+                        <span class="text-gold-400 text-xs font-semibold uppercase mb-1">
+                            الصورة رقم 5
+                        </span>
+
+                        <h4 class="text-white text-lg font-bold">
+                            جانب من اللقاءات المتميزة مع موكلينا الأعزاء في مكتب البيان
+                        </h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Consultation Form Section -->
+    <section id="consultation"
+        class="py-24 bg-navy-800/80 relative border-b border-slate-800 z-10">
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="bg-navy-900 rounded-3xl p-8 sm:p-12 border border-gold-500/30 shadow-2xl relative overflow-hidden">
+
+                <div class="text-center max-w-2xl mx-auto mb-10">
+
+                    <span class="text-gold-500 font-semibold text-sm">
+
+                        <i class="fa-solid fa-file-pen ml-2"></i>
+
+                        تواصل مباشر ومحمي
+
+                    </span>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-3">
+                        طلب استشارة من مكتب البيان
+                    </h2>
+
+                    <p class="text-slate-400 text-sm">
+                        سيتم إرسال كافة البيانات مباشرة إلى الواتساب الخاص بالاستشارات
+                    </p>
+
+                </div>
+
+
+                <form id="consultationForm" class="space-y-6">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <div>
+
+                            <label class="block text-sm font-medium text-slate-300 mb-2">
+                                الاسم الكامل *
+                            </label>
+
+                            <input type="text"
+                                id="clientName"
+                                required
+                                placeholder="أدخل اسمك الكريم"
+                                class="w-full bg-navy-800 border border-slate-700 focus:border-gold-500 text-white rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors">
+
+                        </div>
+
+
+                        <div>
+
+                            <label class="block text-sm font-medium text-slate-300 mb-2">
+                                رقم الهاتف / الواتساب *
+                            </label>
+
+                            <input type="tel"
+                                id="clientPhone"
+                                required
+                                placeholder="010XXXXXXXX"
+                                class="w-full bg-navy-800 border border-slate-700 focus:border-gold-500 text-white rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors text-right"
+                                dir="ltr">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <div>
+
+                            <label class="block text-sm font-medium text-slate-300 mb-2">
+                                نوع الاستشارة / القضية *
+                            </label>
+
+                            <select id="caseType"
+                                class="w-full bg-navy-800 border border-slate-700 focus:border-gold-500 text-white rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors">
+
+                                <option value="مجلس الدولة والقضاء الإداري">
+                                    مجلس الدولة والقضاء الإداري
+                                </option>
+
+                                <option value="الدعاوى المدنية">
+                                    الدعاوى المدنية
+                                </option>
+
+                                <option value="الأحوال الشخصية والأسرة">
+                                    الأحوال الشخصية والأسرة
+                                </option>
+
+                                <option value="استئناف وقضايا مدنية">
+                                    استئناف وقضايا مدنية
+                                </option>
+
+                                <option value="تأسيس شركات وعقود">
+                                    تأسيس شركات وعقود تجارية
+                                </option>
+
+                                <option value="تحكيم وصياغة مذكرات">
+                                    تحكيم وصياغة مذكرات
+                                </option>
+
+                                <option value="استشارة عامة أخرى">
+                                    استشارة عامة أخرى
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div>
+
+                            <label class="block text-sm font-medium text-slate-300 mb-2">
+                                درجة الأهمية / الاستعجال
+                            </label>
+
+                            <select id="urgency"
+                                class="w-full bg-navy-800 border border-slate-700 focus:border-gold-500 text-white rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors">
+
+                                <option value="عادية">
+                                    استشارة عادية
+                                </option>
+
+                                <option value="عاجلة جداً">
+                                    عاجلة جداً (جلسة قريبة / موعد قضائي)
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <label class="block text-sm font-medium text-slate-300 mb-2">
+                            تفاصيل الموضوع *
+                        </label>
+
+                        <textarea id="caseDetails"
+                            rows="4"
+                            required
+                            placeholder="اكتب ملخصاً بسيطاً للموضوع أو التساؤل القانوني..."
+                            class="w-full bg-navy-800 border border-slate-700 focus:border-gold-500 text-white rounded-xl p-4 text-sm focus:outline-none transition-colors"></textarea>
+
+                    </div>
+
+
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-navy-900 font-bold py-4 rounded-xl text-base transition-all shadow-xl shadow-gold-500/20 flex items-center justify-center gap-3">
+
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+
+                        <span>
+                            إرسال الاستشارة لمكتب البيان عبر الواتساب
+                        </span>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- قسم بيانات التواصل والموقع -->
+    <section id="lawyer-contact"
+        class="py-16 bg-navy-900 relative z-10">
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="bg-navy-800/90 border-2 border-gold-500/40 rounded-2xl p-6 md:p-8 shadow-2xl relative overflow-hidden">
+
+                <div class="absolute -top-20 -left-20 w-40 h-40 rounded-full bg-gold-500/5 blur-3xl pointer-events-none"></div>
+
+                <div class="absolute -bottom-20 -right-20 w-40 h-40 rounded-full bg-gold-500/5 blur-3xl pointer-events-none"></div>
+
+
+                <div class="text-center border-b border-slate-700/60 pb-6 mb-6 relative z-10">
+
+                    <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gold-500/10 border border-gold-500/40 text-gold-400 text-2xl mb-4">
+
+                        <i class="fa-solid fa-user-tie"></i>
+
+                    </div>
+
+
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-2">
+                        الأستاذ / يوسف عادل أبوزيد - المحامى
+                    </h2>
+
+
+                    <p class="text-gold-400 font-semibold text-sm md:text-base leading-relaxed">
+                        محام بالاستئناف العالي ومجلس الدولة - عضو اتحاد المحامين العرب
+                    </p>
+
+                </div>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch relative z-10">
+
+
+                    <!-- أرقام الهواتف -->
+                    <div class="bg-navy-900/60 border border-slate-700/60 rounded-xl p-5 space-y-4">
+
+                        <h3 class="text-gold-500 font-bold text-lg flex items-center gap-2">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            أرقام التواصل والتليفون:
+
+                        </h3>
+
+
+                        <ul class="space-y-3 text-slate-200 text-sm md:text-base font-semibold">
+
+                            <li>
+
+                                <a href="tel:01099193330"
+                                    class="flex items-center gap-3 hover:text-gold-400 transition">
+
+                                    <span class="w-9 h-9 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center">
+
+                                        <i class="fa-solid fa-phone"></i>
+
+                                    </span>
+
+                                    <span dir="ltr">
+                                        01099193330
+                                    </span>
+
+                                </a>
+
+                            </li>
+
+
+                            <li>
+
+                                <a href="tel:01221220331"
+                                    class="flex items-center gap-3 hover:text-gold-400 transition">
+
+                                    <span class="w-9 h-9 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center">
+
+                                        <i class="fa-solid fa-phone"></i>
+
+                                    </span>
+
+                                    <span dir="ltr">
+                                        01221220331
+                                    </span>
+
+                                </a>
+
+                            </li>
+
+
+                            <li>
+
+                                <a href="tel:0452927100"
+                                    class="flex items-center gap-3 hover:text-gold-400 transition">
+
+                                    <span class="w-9 h-9 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center">
+
+                                        <i class="fa-solid fa-phone"></i>
+
+                                    </span>
+
+                                    <span dir="ltr">
+                                        0452927100
+                                    </span>
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- العنوان والموقع -->
+                    <div class="bg-navy-900/60 border border-slate-700/60 rounded-xl p-5 space-y-4">
+
+                        <h3 class="text-gold-500 font-bold text-lg flex items-center gap-2">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            العنوان والمقر الرئيسي:
+
+                        </h3>
+
+
+                        <div class="flex items-start gap-3">
+
+                            <span class="w-9 h-9 min-w-[36px] rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center">
+
+                                <i class="fa-solid fa-map-location-dot"></i>
+
+                            </span>
+
+
+                            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+
+                                رشيد - خلف شارع المحكمة - أمام سنتر سندي وسنتر مواسم
+                                (متفرع من شارع الصاغة).
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- أزرار التواصل -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 relative z-10">
+
+                    <a href="tel:01221220331"
+                        class="flex items-center justify-center gap-3 bg-gold-600 hover:bg-gold-500 text-navy-900 font-bold py-3 px-5 rounded-xl transition-all">
+
+                        <i class="fa-solid fa-phone text-lg"></i>
+
+                        <span>
+                            اتصال مباشر
+                        </span>
+
+                    </a>
+
+
+                    <a href="https://wa.me/201221220331"
+                        target="_blank"
+                        class="flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-5 rounded-xl transition-all">
+
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+
+                        <span>
+                            تواصل عبر واتساب
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact"
+        class="bg-navy-800 border-t border-slate-800 text-slate-400 py-12 relative z-10">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-700/50">
+
+                <div class="flex items-center gap-3">
+
+                    <div class="w-10 h-10 rounded-full border border-gold-500/50 bg-navy-900 flex items-center justify-center text-gold-500">
+
+                        <i class="fa-solid fa-scale-balanced text-lg"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="block text-lg font-bold text-white font-serif-custom">
+                            مكتب الأستاذ / يوسف عادل أبوزيد - المحامى
+                        </span>
+
+                        <span class="block text-xs text-slate-400">
+                            جميع الحقوق محفوظة © 2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- بيانات المطور -->
+                <div class="flex items-center gap-3 bg-navy-900/80 px-4 py-2.5 rounded-xl border border-gold-500/30 text-sm">
+
+                    <span class="text-slate-300">
+                        تصميم وتطوير:
+                    </span>
+
+
+                    <a href="https://wa.me/201016096917"
+                        target="_blank"
+                        class="font-semibold text-gold-400 hover:text-gold-300 flex items-center gap-2 transition-colors">
+
+                        <i class="fa-solid fa-code text-gold-500"></i>
+
+                        <span>
+                            Eng / Hamdy Darwesh
+                        </span>
+
+                        <span
+                            class="bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs px-2 py-0.5 rounded-md font-mono"
+                            dir="ltr">
+
+                            01016096917
+
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="pt-6 text-center text-xs text-slate-500">
+
+                البيان للمحاماة والاستشارات القانونية
+                —
+                الأستاذ / يوسف عادل أبوزيد - المحامى
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        // فتح وإغلاق القائمة في الموبايل
+        document.getElementById('menu-btn').addEventListener('click', function () {
+
+            const menu = document.getElementById('mobile-menu');
+
+            menu.classList.toggle('hidden');
+
+        });
+
+
+        // إغلاق القائمة عند الضغط على أي رابط
+        document.querySelectorAll('#mobile-menu a').forEach(function (link) {
+
+            link.addEventListener('click', function () {
+
+                document.getElementById('mobile-menu').classList.add('hidden');
+
+            });
+
+        });
+
+
+        // منع استخدام زر الفأرة الأيمن
+        document.addEventListener('contextmenu', function (e) {
+
+            e.preventDefault();
+
+        });
+
+
+        // حظر الاختصارات الخاصة بأدوات التفتيش والنسخ وسورس الصفحة
+        document.addEventListener('keydown', function (e) {
+
+            if (e.keyCode === 123) {
+
+                e.preventDefault();
+
+                return false;
+
+            }
+
+
+            if (
+                e.ctrlKey &&
+                e.shiftKey &&
+                (
+                    e.keyCode === 73 ||
+                    e.keyCode === 74 ||
+                    e.keyCode === 67
+                )
+            ) {
+
+                e.preventDefault();
+
+                return false;
+
+            }
+
+
+            if (e.ctrlKey && e.keyCode === 85) {
+
+                e.preventDefault();
+
+                return false;
+
+            }
+
+
+            if (e.ctrlKey && e.keyCode === 83) {
+
+                e.preventDefault();
+
+                return false;
+
+            }
+
+        });
+
+
+        // منع سحب الصور
+        document.querySelectorAll('img').forEach(img => {
+
+            img.addEventListener('dragstart', (e) => {
+
+                e.preventDefault();
+
+            });
+
+        });
+
+
+        // مسح Console
+        setInterval(function () {
+
+            console.clear();
+
+        }, 1000);
+
+
+        // ربط نموذج الواتساب
+        document.getElementById('consultationForm').addEventListener('submit', function (e) {
+
+            e.preventDefault();
+
+
+            const name =
+                document.getElementById('clientName').value;
+
+            const phone =
+                document.getElementById('clientPhone').value;
+
+            const type =
+                document.getElementById('caseType').value;
+
+            const urgency =
+                document.getElementById('urgency').value;
+
+            const details =
+                document.getElementById('caseDetails').value;
+
+
+            const message =
+
+                `السلام عليكم ورحمة الله، أود طلب استشارة قانونية من مكتب البيان:\n\n` +
+
+                `👤 الاسم: ${name}\n` +
+
+                `📱 الرقم: ${phone}\n` +
+
+                `⚖️ نوع القضية: ${type}\n` +
+
+                `🚨 الاستعجال: ${urgency}\n` +
+
+                `📝 تفاصيل الموضوع:\n${details}`;
+
+
+            const whatsappUrl =
+
+                `https://wa.me/201221220331?text=${encodeURIComponent(message)}`;
+
+
+            window.open(whatsappUrl, '_blank');
+
+        });
+
+    </script>
+
+</body>
+</html>
